@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit{
   
-  title = 'ollast';
+  title = 'Open Layer Map & Clustering';
 
   ngOnInit(): void {
   }
