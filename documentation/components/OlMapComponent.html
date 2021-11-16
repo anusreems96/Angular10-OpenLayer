@@ -1,0 +1,1143 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ollast documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">ollast documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  OlMapComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/ol-map/ol-map.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/AfterViewInit" target="_blank" >AfterViewInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-ol-map</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./ol-map.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./ol-map.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#map" >map</a>
+                            </li>
+                            <li>
+                                <a href="#markers" >markers</a>
+                            </li>
+                            <li>
+                                <a href="#overlay" >overlay</a>
+                            </li>
+                            <li>
+                                <a href="#popupContainer" >popupContainer</a>
+                            </li>
+                            <li>
+                                <a href="#popupContent" >popupContent</a>
+                            </li>
+                            <li>
+                                <a href="#vectorLayer" >vectorLayer</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#closePopup" >closePopup</a>
+                            </li>
+                            <li>
+                                <a href="#getClusterStyle" >getClusterStyle</a>
+                            </li>
+                            <li>
+                                <a href="#getMapCoordintes" >getMapCoordintes</a>
+                            </li>
+                            <li>
+                                <a href="#getMarkerStyle" >getMarkerStyle</a>
+                            </li>
+                            <li>
+                                <a href="#initializeMap" >initializeMap</a>
+                            </li>
+                            <li>
+                                <a href="#ngAfterViewInit" >ngAfterViewInit</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor()</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/ol-map/ol-map.component.ts:34</a></div>
+                            </td>
+                        </tr>
+
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="closePopup"></a>
+                    <span class="name">
+                        <span ><b>closePopup</b></span>
+                        <a href="#closePopup"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>closePopup()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="44"
+                            class="link-to-prism">src/app/ol-map/ol-map.component.ts:44</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getClusterStyle"></a>
+                    <span class="name">
+                        <span ><b>getClusterStyle</b></span>
+                        <a href="#getClusterStyle"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getClusterStyle(feature)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="206"
+                            class="link-to-prism">src/app/ol-map/ol-map.component.ts:206</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>feature</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getMapCoordintes"></a>
+                    <span class="name">
+                        <span ><b>getMapCoordintes</b></span>
+                        <a href="#getMapCoordintes"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getMapCoordintes(event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="48"
+                            class="link-to-prism">src/app/ol-map/ol-map.component.ts:48</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getMarkerStyle"></a>
+                    <span class="name">
+                        <span ><b>getMarkerStyle</b></span>
+                        <a href="#getMarkerStyle"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getMarkerStyle()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="237"
+                            class="link-to-prism">src/app/ol-map/ol-map.component.ts:237</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initializeMap"></a>
+                    <span class="name">
+                        <span ><b>initializeMap</b></span>
+                        <a href="#initializeMap"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initializeMap()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="54"
+                            class="link-to-prism">src/app/ol-map/ol-map.component.ts:54</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngAfterViewInit"></a>
+                    <span class="name">
+                        <span ><b>ngAfterViewInit</b></span>
+                        <a href="#ngAfterViewInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngAfterViewInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="40"
+                            class="link-to-prism">src/app/ol-map/ol-map.component.ts:40</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="38"
+                            class="link-to-prism">src/app/ol-map/ol-map.component.ts:38</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="map"></a>
+                    <span class="name">
+                        <span ><b>map</b></span>
+                        <a href="#map"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Map</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/ol-map/ol-map.component.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="markers"></a>
+                    <span class="name">
+                        <span ><b>markers</b></span>
+                        <a href="#markers"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Feature[]</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/ol-map/ol-map.component.ts:34</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="overlay"></a>
+                    <span class="name">
+                        <span ><b>overlay</b></span>
+                        <a href="#overlay"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Overlay</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/ol-map/ol-map.component.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="popupContainer"></a>
+                    <span class="name">
+                        <span ><b>popupContainer</b></span>
+                        <a href="#popupContainer"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>ElementRef&lt;HTMLDivElement&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;olPopupContainer&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/ol-map/ol-map.component.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="popupContent"></a>
+                    <span class="name">
+                        <span ><b>popupContent</b></span>
+                        <a href="#popupContent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>ElementRef&lt;HTMLDivElement&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;olPopupContent&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/ol-map/ol-map.component.ts:29</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="vectorLayer"></a>
+                    <span class="name">
+                        <span ><b>vectorLayer</b></span>
+                        <a href="#vectorLayer"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>VectorLayer</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/ol-map/ol-map.component.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {
+    AfterViewInit,
+    Component,
+    ElementRef,
+    OnInit,
+    ViewChild,
+} from &#x27;@angular/core&#x27;;
+import Feature from &#x27;ol/Feature&#x27;;
+import Point from &#x27;ol/geom/Point&#x27;;
+import { Tile as TileLayer, Vector as VectorLayer } from &#x27;ol/layer&#x27;;
+import Map from &#x27;ol/Map&#x27;;
+import Overlay from &#x27;ol/Overlay&#x27;;
+import * as olProj from &#x27;ol/proj&#x27;;
+import { OSM, Vector, Cluster } from &#x27;ol/source&#x27;;
+import { Circle, Fill, Stroke, Style, Text } from &#x27;ol/style&#x27;;
+import View from &#x27;ol/View&#x27;;
+import { boundingExtent } from &#x27;ol/extent&#x27;;
+
+export const ReadableCoordFormat: string &#x3D; &#x27;EPSG:4326&#x27;;
+export const OlCoordFormat: string &#x3D; &#x27;EPSG:3857&#x27;;
+
+@Component({
+    selector: &#x27;app-ol-map&#x27;,
+    templateUrl: &#x27;./ol-map.component.html&#x27;,
+    styleUrls: [&#x27;./ol-map.component.scss&#x27;],
+})
+export class OlMapComponent implements OnInit, AfterViewInit {
+    @ViewChild(&#x27;olPopupContainer&#x27;) popupContainer: ElementRef&lt;HTMLDivElement&gt;;
+    @ViewChild(&#x27;olPopupContent&#x27;) popupContent: ElementRef&lt;HTMLDivElement&gt;;
+
+    map: Map;
+    overlay: Overlay;
+    vectorLayer: VectorLayer;
+    markers: Feature[];
+
+    constructor() { }
+
+    ngOnInit(): void { }
+
+    ngAfterViewInit(): void {
+        this.initializeMap();
+    }
+
+    closePopup() {
+        this.overlay.setPosition(undefined);
+    }
+
+    getMapCoordintes(event: any) {
+        let coords &#x3D; this.map.getEventCoordinate(event);
+        let test &#x3D; olProj.transform(coords, OlCoordFormat, ReadableCoordFormat);
+        console.table({ coords, test });
+    }
+
+    initializeMap() {
+        const content &#x3D; this.popupContent.nativeElement;
+        const center &#x3D; olProj.transform([76.26, 9.93], ReadableCoordFormat, OlCoordFormat); //initial position of map
+        const view &#x3D; new View({
+            center: center,
+            zoom: 3,
+        });
+
+        //raster layer on map
+        const OSMBaseLayer &#x3D; new TileLayer({
+            source: new OSM(),
+        });
+
+        let vectorSource &#x3D; new Vector({ wrapX: true });
+        let clusterSource &#x3D; new Cluster({ distance: 15, source: vectorSource });
+
+        let vectorLayer &#x3D; new VectorLayer({
+            source: clusterSource,
+            style: (feature) &#x3D;&gt; {
+                return this.getClusterStyle(feature);
+            },
+        });
+
+        this.map &#x3D; new Map({
+            layers: [OSMBaseLayer, vectorLayer],
+            target: &#x27;ol-map&#x27;,
+            view: view,
+        });
+
+        // Popup showing the position the user clicked
+        var popupContainer &#x3D; this.popupContainer.nativeElement;
+        var popup &#x3D; new Overlay({
+            element: popupContainer,
+            autoPan: true,
+            autoPanAnimation: {
+                duration: 250,
+            },
+        });
+        this.map.addOverlay(popup);
+
+        var data &#x3D; [
+            { Lat: 13.384130, Lon: 74.894423 },
+            { Lat: 13.352336, Lon: 74.846899 },
+            { Lat: 13.182951, Lon: 75.175259 },
+            { Lat: 13.677988, Lon: 75.221229 },
+            { Lat: 10.166713, Lon: 76.454200 },
+            { Lat: 10.122281, Lon: 76.462515 },
+            { Lat: 9.7291489, Lon: 76.672759 },
+            { Lat: 10.080182, Lon: 76.610993 },
+            { Lat: 9.2127229, Lon: 77.000070 },
+            { Lat: 14.055547, Lon: 74.518642 },
+            { Lat: 11.854550, Lon: 79.004382 },
+            { Lat: 11.706582, Lon: 78.441001 },
+            { Lat: 10.439002, Lon: 79.732655 },
+            { Lat: 14.410209, Lon: 80.034957 },
+        ];
+
+        data.forEach((item, i) &#x3D;&gt; {
+            //iterate through array...
+            var longitude &#x3D; item.Lon,
+                latitude &#x3D; item.Lat,
+                iconFeature &#x3D; new Feature({
+                    geometry: new Point(
+                        olProj.transform([longitude, latitude], &#x27;EPSG:4326&#x27;, &#x27;EPSG:3857&#x27;)
+                    ),
+                    type: &#x27;Point&#x27;,
+                    title: i,
+                    desc:
+                        &#x27;&lt;pre&gt;&lt;b&gt;Item - &#x27;+ i + &#x27;&lt;/b&gt; &#x27; +
+                        &#x27;&lt;br&gt;&#x27; +
+                        &#x27;Latitude : &#x27; +
+                        latitude +
+                        &#x27;&lt;br&gt;Longitude: &#x27; +
+                        longitude +
+                        &#x27;&lt;/pre&gt;&#x27;,
+                }),
+                iconStyle &#x3D; new Style({
+                    image: new Circle({
+                        radius: 6,
+                        stroke: new Stroke({
+                            color: &#x27;black&#x27;,
+                        }),
+                        fill: new Fill({
+                            color: &#x27;red&#x27;,
+                        }),
+                    }),
+                });
+
+            iconFeature.setStyle(iconStyle);
+
+            vectorSource.addFeature(iconFeature);
+        });
+
+        this.map.on(&#x27;click&#x27;, (e) &#x3D;&gt; {
+            vectorLayer.getFeatures(e.pixel).then((clickedFeatures) &#x3D;&gt; {
+                if (clickedFeatures.length) {
+                    // Get clustered Coordinates
+                    const features &#x3D; clickedFeatures[0].get(&#x27;features&#x27;);
+                    if (features.length &gt; 1) {
+                        const extent &#x3D; boundingExtent(
+                            features.map((r) &#x3D;&gt; r.getGeometry().getCoordinates())
+                        );
+                        this.map
+                            .getView()
+                            .fit(extent, { duration: 1000, padding: [50, 50, 50, 50] });
+                    }
+                }
+            });
+        });
+
+        /* Add a pointermove handler to the map to render the popup.*/
+        this.map.on(&#x27;pointermove&#x27;, (evt) &#x3D;&gt; {
+            
+            
+            var feature &#x3D; this.map.forEachFeatureAtPixel(evt.pixel, (feat, layer) &#x3D;&gt; {
+                return feat;
+            });
+
+            console.log(&#x27;hit&#x27;, feature);
+
+            vectorLayer.getFeatures(evt.pixel).then((hoveredFeatures) &#x3D;&gt; {
+                if (hoveredFeatures.length) {
+                    // Get clustered Coordinates
+                    const features &#x3D; hoveredFeatures[0].get(&#x27;features&#x27;);
+                    if (features.length &#x3D;&#x3D;&#x3D; 1) {
+                        var coordinate &#x3D; evt.coordinate; //default projection is EPSG:3857 you may want to use ol.proj.transform
+                        content.innerHTML &#x3D; features[0].get(&#x27;desc&#x27;);
+                        popup.setPosition(coordinate);
+                    }
+                    else if(features.length &gt; 1) {
+                        var coordinate &#x3D; evt.coordinate; //default projection is EPSG:3857 you may want to use ol.proj.transform
+                        content.innerHTML &#x3D; &#x60;Items: ${features.map(f &#x3D;&gt; f.get(&#x27;title&#x27;)).join()}&#x60;;
+                        popup.setPosition(coordinate);
+                    }
+                    else {
+                        popup.setPosition(undefined);
+                    }
+                }
+            });
+
+
+            if (feature &amp;&amp; feature.get(&#x27;type&#x27;) &#x3D;&#x3D; &#x27;Point&#x27;) {
+                var coordinate &#x3D; evt.coordinate; //default projection is EPSG:3857 you may want to use ol.proj.transform
+
+                content.innerHTML &#x3D; feature.get(&#x27;desc&#x27;);
+                popup.setPosition(coordinate);
+            } else {
+                popup.setPosition(undefined);
+            }
+        });
+    }
+
+    getClusterStyle(feature) {
+        const styleCache &#x3D; {};
+        const size &#x3D; feature.get(&#x27;features&#x27;).length;
+        console.log({ size });
+        if (size &#x3D;&#x3D;&#x3D; 1) {
+            return this.getMarkerStyle();
+        }
+        let style &#x3D; styleCache[size];
+        if (!style) {
+            style &#x3D; new Style({
+                image: new Circle({
+                    radius: 10,
+                    stroke: new Stroke({
+                        color: &#x27;#fff&#x27;,
+                    }),
+                    fill: new Fill({
+                        color: &#x27;#3399CC&#x27;,
+                    }),
+                }),
+                text: new Text({
+                    text: size.toString(),
+                    fill: new Fill({
+                        color: &#x27;#fff&#x27;,
+                    }),
+                }),
+            });
+            styleCache[size] &#x3D; style;
+        }
+        return style;
+    }
+
+    getMarkerStyle() {
+        let style &#x3D; new Style({
+            image: new Circle({
+                radius: 6,
+                stroke: new Stroke({
+                    color: &#x27;black&#x27;,
+                }),
+                fill: new Fill({
+                    color: &#x27;red&#x27;,
+                }),
+            }),
+        });
+        return style;
+    }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div id&#x3D;&quot;ol-map&quot; (click)&#x3D;&quot;getMapCoordintes($event)&quot;&gt;&lt;/div&gt;
+&lt;div id&#x3D;&quot;ol-popup&quot; class&#x3D;&quot;ol-popup&quot; #olPopupContainer&gt;
+    &lt;!-- &lt;span id&#x3D;&quot;ol-popup-closer&quot; class&#x3D;&quot;ol-popup-closer&quot; (click)&#x3D;&quot;closePopup()&quot; &gt;&lt;/span&gt; --&gt;
+    &lt;div id&#x3D;&quot;ol-popup-content&quot; #olPopupContent&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./ol-map.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">#ol-map {
+  border: 1px solid blue;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+
+.ol-popup {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #cccccc;
+  bottom: 12px;
+  left: -50px;
+  min-width: 150px;
+}
+.ol-popup:after,
+.ol-popup:before {
+  top: 100%;
+  border: solid transparent;
+  content: &quot; &quot;;
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.ol-popup:after {
+  border-top-color: white;
+  border-width: 10px;
+  left: 48px;
+  margin-left: -10px;
+}
+.ol-popup:before {
+  border-top-color: #cccccc;
+  border-width: 11px;
+  left: 48px;
+  margin-left: -11px;
+}
+.ol-popup-closer {
+  text-decoration: none;
+  position: absolute;
+  top: 2px;
+  right: 8px;
+}
+.ol-popup-closer:after {
+  content: &quot;✖&quot;;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div id="ol-map" (click)="getMapCoordintes($event)"></div><div id="ol-popup" class="ol-popup" #olPopupContainer>    <!-- <span id="ol-popup-closer" class="ol-popup-closer" (click)="closePopup()" ></span> -->    <div id="ol-popup-content" #olPopupContent></div></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'OlMapComponent', 'selector': 'app-ol-map'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'OlMapComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'OlMapComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       
+       <script type="module" src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

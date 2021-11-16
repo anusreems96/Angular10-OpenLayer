@@ -32,8 +32,6 @@ export class OlMapComponent implements OnInit, AfterViewInit {
     overlay: Overlay;
     vectorLayer: VectorLayer;
     markers: Feature[];
-    userMarker: Feature;
-    markersLayer: VectorLayer;
 
     constructor() { }
 
